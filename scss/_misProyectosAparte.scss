@@ -1,0 +1,231 @@
+.portadaProyecto {
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(253, 187, 233, 0.4), rgb(51, 51, 51, 1));
+    }
+
+    .contenedorTextoh1 {
+        position: absolute;
+        font-family: 'Sacramento', cursive;
+        color: white;
+        font-size: 72px;
+        text-align: center;
+
+    }
+
+    .contenedorImagen {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*********fin portada****************/
+.titulos {
+    background-color:rgb(51, 51, 51);
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3%;
+
+    span {
+        color: crimson;
+        font-size: 3rem;
+    }
+}
+
+.itemsText {
+    padding: 6%;
+    color: snow;
+    h3 {
+        color: pink;
+        font-size: 1,5rem;
+    }
+}
+
+
+.contenedorGrid {
+    width: 100%;
+    display: grid;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: rgb(51, 51, 51);
+    gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+
+    #itemDiseno {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-image: url(../multimedia/balconero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item1 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-color: salmon;
+        background-image: url(../multimedia/cesto.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+
+    #item2 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+
+    }
+
+    #item3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #item4 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        background-image: url(../multimedia/silla\ ergo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+.contenedorGrid {
+    #itemPublicitario {
+        grid-column: 3/5;
+        grid-row: 1/3;
+        height: auto;
+        background-image: url(../multimedia/4310607.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item5 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(../multimedia/publicidad\ cuadrada.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #item6 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #item7 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #item8 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(../multimedia/publicidad\ cuadrada\ 3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.contenedorGrid {
+    #itemPackaging {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        height: auto;
+        background-image: url(../multimedia/packaging4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item9 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #item10 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        background-image: url(../multimedia/packaging\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item11 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+        background-image: url(../multimedia/packaging2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item12 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+}
+
+.contenedorGrid {
+
+    #itemWeb {
+        grid-column: 3/5;
+        grid-row: 1/3;
+        background-color: violet;
+        height: auto;
+        background-image: url(../multimedia/diseño\ web.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #item13 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: royalblue;
+        background-image: url(../multimedia/diseño\ web\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    #item14 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #item15 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #item16 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: rgb(65, 214, 225);
+        background-image: url(../multimedia/diseño\ web\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}

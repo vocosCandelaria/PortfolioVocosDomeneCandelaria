@@ -1,0 +1,76 @@
+/*for*/
+
+@for $var from 1 through 3 {
+    .contenedor#{$var} {
+        padding: 4%;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        .contenedorIzquierda {
+            width: 50%;
+            height: 100%;
+            padding: 3%;
+
+            h4 {
+
+                font-family: "Archivo Black", sans-serif;
+                padding-bottom: 1.5%;
+            }
+           
+
+            a {
+                background-color: $color1;
+                color: $color2;
+                width: auto;
+                height: 40px;
+                border-radius: 20px;
+                margin-bottom: 1%;
+
+                &:hover {
+                    background-color: $color4;
+                    color: $color1;
+                    border: 2px solid crimson;
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .contenedorDerecha {
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+            box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+            padding: 0%;
+
+            img {
+                height: 100%;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                transition: 2s;
+
+                &:hover {
+                    transform: translateX(-30%);
+                }
+
+            }
+        }
+    }
+}
+
+
+/*mapa de colores*/
+$contenedor: (contenedor1:$color5, contenedor2:$color4, contenedor3:$color6);
+
+@each $cont,
+$color in $contenedor {
+    .#{$cont} {
+        background-color: $color;
+        color: crimson;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,105 @@
+.centradoVyH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fijoSticky{
+    position: sticky;
+    top: 200vh;
+}
+#proyectoGris {
+    height: 100vh;
+    background-color: rgb(247, 238, 244);
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    a {
+        text-decoration: none;
+
+        h2 {
+            font-family: 'Sacramento', cursive;
+            color: crimson;
+            font-size: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 45%;
+        }
+    }
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                color: rgb(44, 40, 44);
+                text-align: center;
+            }
+        }
+    }
+}
+
+#proyectoFotos {
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    &::-webkit-scrollbar{
+        width: 7px;
+        background: white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: crimson;
+    }
+
+    .contFoto {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            transition: 4s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+
+        }
+        .ejeY{
+            img {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                transition: 4s;
+    
+                &:hover {
+                    transform: translateY(-48%);
+                }
+    
+    
+            }
+        }
+
+    }
+
+}

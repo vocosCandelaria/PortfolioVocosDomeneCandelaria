@@ -1,0 +1,36 @@
+#contenedorRosa {
+    height: 100vh;
+    background-color: #FF82BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-family: 'Sacramento', cursive;
+        color: white;
+        font-size: 60px;
+    }
+}
+#contenedorBlanco {
+    background-color: antiquewhite;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 4%;
+    padding-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    color: rgb(54, 53, 53);
+    a{
+        &:hover {
+            color: #FF82BE;
+        }
+    }
+    
+}
+
+.enlaces {
+    color: crimson;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+

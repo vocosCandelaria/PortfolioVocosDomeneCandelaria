@@ -1,0 +1,30 @@
+@import "_variables";
+@import "_footer";
+@import "_portada";
+@import "_sobreMi";
+@import "_misProyectos";
+@import "_sobreMiAparte";
+@import "_misProyectosAparte";
+
+.bodyIndex{
+    margin:0;
+    height: auto;
+    background-image: url(../multimedia/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    &::before{
+        content:"";
+        width: 100%;
+        height: 524.2%;
+        position: absolute;
+        /*puse position para poder mover la capa hacia atras en el eje z*/
+       top: 0;
+        left: 0;
+        background-image: linear-gradient(90deg, #e83b59,#509fc9);
+        opacity: 0.3;
+        z-index: 0;
+    }
+}
