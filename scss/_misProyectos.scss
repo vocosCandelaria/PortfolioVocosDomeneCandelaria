@@ -13,9 +13,6 @@
     display: block;
     justify-content: center;
     align-items: center;
-
-    
-
     a {
         text-decoration: none;
 
@@ -52,6 +49,7 @@
     overflow: auto;
     padding-right: 0px !important;
     padding-left: 0px !important;
+    
     &::-webkit-scrollbar{
         width: 7px;
         background: white;
@@ -79,8 +77,6 @@
             &:hover {
                 transform: scale(1.2);
             }
-
-
         }
         .ejeY{
             img {
@@ -95,11 +91,7 @@
                 &:hover {
                     transform: translateY(-48%);
                 }
-    
-    
             }
         }
-
     }
-
 }
