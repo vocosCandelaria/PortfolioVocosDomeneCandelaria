@@ -81,17 +81,25 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    }    
 
     #item1 {
         grid-column: 3/4;
         grid-row: 1/2;
-        background-color: salmon;
-        background-image: url(../multimedia/cesto.jpg);
+        width: 100%;
+        overflow: hidden;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
+        img{
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            transition: s;
+            &:hover{
+                transform:translateX(-60%);
+            }
+        }
     }
 
     #item2 {
