@@ -492,14 +492,6 @@ ul ul li {
   font-size: 3rem;
 }
 
-.items {
-  max-height: 30rem;
-}
-
-.itemsGrandes {
-  min-width: 30rem;
-}
-
 .itemsText {
   padding: 6%;
   color: snow;
@@ -923,6 +915,31 @@ ul ul li {
   .contenedorGrid4 #item16 {
     grid-column: 1/3;
     grid-row: 4/5;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contenedorGrid1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 32rem 18rem 25rem 26rem 26rem;
+    gap: 1rem;
+  }
+
+  .contenedorGrid2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 38rem 30rem 20rem 30rem 28rem;
+    gap: 1rem;
+  }
+
+  .contenedorGrid3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 38rem 15rem 26rem 15rem 28rem;
+    gap: 1rem;
+  }
+
+  .contenedorGrid4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 38rem 30rem 23rem 30rem 26rem;
+    gap: 1rem;
   }
 }
 .bodyIndex {
